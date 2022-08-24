@@ -1,0 +1,6 @@
+Average size (cm), Average weight (kg), Population (thousands), Top Trumps Cutenes, Typical dive (m), 0
+Guillemot, 41, 1, 18000, 42, 39, 1
+Little Auk, 20, 0, 25000, 25, 40, 1
+Razorbill, 40, 1, 1200, 37, 15, 1
+Galapagos, 49, 2, 2, 37, 4, 1
+The Great Auk, 80, 5, 0, 33, 35, 1

@@ -1,0 +1,69 @@
+from time import sleep
+import numpy as np
+from random import randint
+from time import time
+
+a = 75
+
+for i in np.arange(0,10):
+    for i in np.arange(0,a):
+        print("")
+    print("loading.")
+    sleep(0.2)
+    for i in np.arange(0,a):
+        print("")
+    print("loading .")
+    sleep(0.2)
+    for i in np.arange(0,a):
+        print("")
+    print("loading  .")
+    sleep(0.2)
+
+qr = raw_input("This program needs an update. Press R to restart. ")
+
+for i in np.arange(0,5):
+    for i in np.arange(0,a):
+        print("")
+    print("Shuting down.")
+    sleep (0.2)
+    for i in np.arange(0,a):
+        print("")
+    print("Shuting down .")
+    sleep (0.2)
+    for i in np.arange(0,a):
+        print("")
+    print("Shuting down  .")
+    sleep (0.2)
+for i in np.arange(0,a):
+    print("")
+sleep(randint(2,5))
+upc = 0
+
+while upc < 100:
+    for i in np.arange(0,a):
+        print("")
+    print('Update remaining: ' + str(upc) + '%')
+    sleep(float(randint(1,10))/10)
+    upc = upc + randint(1,5)
+    for i in np.arange(0,a):
+        print("")
+print('Update remaining: 100%')
+sleep(10)
+for i in np.arange(0,a):
+        print("")
+print('Happy ' + str(int(time())-147484800) + 'th second. (time since midnight of 5.9.1974)')
+print ' __    __       ___      .______   .______   ____    ____    .______    __  .______     .___________. __    __   _______       ___   ____    ____ '
+sleep (0.1)
+print '|  |  |  |     /   \     |   _  \  |   _  \  \   \  /   /    |   _  \  |  | |   _  \    |           ||  |  |  | |       \     /   \  \   \  /   / '
+sleep (0.1)
+print '|  |__|  |    /  ^  \    |  |_)  | |  |_)  |  \   \/   /     |  |_)  | |  | |  |_)  |   `---|  |----`|  |__|  | |  .--.  |   /  ^  \  \   \/   / '
+sleep (0.1)
+print '|   __   |   /  /_\  \   |   ___/  |   ___/    \_    _/      |   _  <  |  | |      /        |  |     |   __   | |  |  |  |  /  /_\  \  \_    _/ '
+sleep (0.1)
+print "|  |  |  |  /  _____  \  |  |      |  |          |  |        |  |_)  | |  | |  |\  \----.   |  |     |  |  |  | |  '--'  | /  _____  \   |  |  "
+sleep (0.1)
+print '|__|  |__| /__/     \__\ | _|      | _|          |__|        |______/  |__| | _| `._____|   |__|     |__|  |__| |_______/ /__/     \__\  |__|  '
+
+
+
+

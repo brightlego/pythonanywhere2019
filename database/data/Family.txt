@@ -1,0 +1,5 @@
+Age, Height, Shoe, 0
+Simon, 44, 176, 10, 1
+Emily, 44, 163, 7, 1
+John, 13, 165, 8, 1
+Adam, 11, 140, 5.5, 1

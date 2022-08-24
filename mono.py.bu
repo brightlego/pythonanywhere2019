@@ -1,0 +1,137 @@
+import random
+
+def dice(a = 6,b = 2):
+#    a = 6
+#    b = 2
+    dicenumber = 1
+    dicescore = 0
+    dicevalue1 = 0
+    dicevalue2 = 0
+    for number in range(b):
+        score = random.randint(1,a)
+ #       print(score)
+        dicescore = dicescore + score
+        if dicenumber == 1:
+            dicevalue1 = score
+        else:
+            dicevalue2 = score
+        dicenumber = dicenumber + 1
+#    print(dicevalue1)
+#    print(dicevalue2)
+#    print(dicescore)
+    return(dicescore,dicevalue1,dicevalue2)
+
+def board():
+    tile = 0
+    dicescore = 0
+#    for i in range(2):
+    dicescore, dicevalue1, dicevalue2 = dice(a = 6,b = 2)
+
+    if tile < 40:
+        tile = tile + dicescore
+    else:
+#        print(dicescore)
+        tile = tile - 40
+        tile = tile + dicescore
+#        print(tile)
+    return(tile)
+
+def movement(tile):
+    goscore = 0
+    if tile <= 39:
+        tile = tile + board()
+#        print(tile)
+        goscore = 0
+    else:
+        tile = (tile + board()) - 40
+#        print(tile)
+        goscore = 1
+    return(goscore,tile)
+
+def money(goscore,moneyin,tile):
+#    money = 1500
+#    print(tile)
+    if goscore == 1:
+        moneyin = moneyin + 200
+        print("You passed The North Pole. +200")
+        print(" ")
+#        print(moneyin)
+    if tile == 4:
+        moneyin = moneyin - 200
+        print("You paid Santa tax. -200")
+        print(" ")
+#        print("you have")
+#        print(moneyin)
+    if tile == 38:
+        moneyin = moneyin - 100
+        print("You paid elf tax. -100")
+        print(" ")
+  #      print("you have")
+ #       print(moneyin)
+    return(moneyin)
+
+def movement_money():
+    go = 1
+    tile = 0
+    moneyin = 1500
+    dict = christ_dic()
+    while go == 1:
+        if tile == -1:
+            print("Your in Santas Workshop.")
+            jailout = input("Pay or role? ")
+            if jailout == 1:
+                moneyin = moneyin - 50
+                print("You paied 50 pounds to get out of Santa's Workshop.")
+                print(" ")
+                tile = 10
+            else:
+                dicescore, dicevalue1, dicevalue2 = dice()
+                if dicevalue1 == dicevalue2:
+                    print("You rolled a double. Your now out of Santa's Workshop.")
+                    print(" ")
+                    tile = 10
+        if tile == 30:
+            print("Go to Santa's Workshop.")
+            tile = -1
+        if tile != -1:
+            goscore, tile = movement(tile)
+            if tile > 39:
+                tile = tile - 40
+                goscore = 1
+            moneyout = money(goscore,moneyin,tile)
+#            print(str("Tile: ")+str(tile))
+            print(str("Tile: ") + str(dict[tile]))
+            moneyin = moneyout
+            print(str("Money: ")+str(moneyout))
+        print(" ")
+        if go == 1:
+            go = input("One more go? ")
+        if go != 1:
+            go = input("Are you sure? ")
+        print(" ")
+    return(money,tile)
+
+def movement_money_multi():
+    if turn == 1:
+        player1.money, player1.tile = movement_money()
+
+def tile_dic():
+    dict = {-1 : 'Santas Workshop' , 0 : 'The North Pole' , 1 : 'Old Kent Road' , 2 : 'Comunity Chest' , 3 : 'Whitechapel Road' , 4 : 'Santa tax' , 5 : 'Santas Cross Station' , 6 : 'The Angel, Islington' , 7 : 'Chance' , 8 : 'Euston Road' ,
+    9 : 'Pentoville Road' , 10 : 'Just Visiting' , 11 : 'Pall Mall' , 12 : 'Electric Company' , 13 : 'Whitehall' , 14 : 'Northunbererland Avenue' , 15 : 'Rudolf Station' , 16 : 'Bow Street' , 17 : 'Comunity Chest' ,
+    18 : 'Marlborough Street' , 19 : 'Vine Street' , 20 : 'Raindeer Parking', 21 : 'Strand', 22 : 'Chance', 23: 'Fleet Street', 24 : 'Trafalgar Square', 25 : 'North Pole Station', 26 : 'Leicester Square', 27 : 'Coventry Street',
+    28 : 'Water Works', 29 : 'Piccadilly', 30 : 'Go to Santas Workshop', 31 : 'Regent Street', 32 : 'Oxford Street', 33 : 'Community chest', 34 : 'Bond Street', 35 : 'Raindeer Street Station', 36 : 'Chance', 37 : 'Park Lane', 38 :
+    'Elf Tax', 39 : 'Mayfair'};
+    return(dict)
+
+def christ_dic():
+    dict = {-1 : 'Santas Workshop' , 0 : 'The North Pole' , 1 : 'Old Kent Road' , 2 : 'Elf Chest' , 3 : 'Whitechapel Road' , 4 : 'Santa tax' , 5 : 'Santas Cross Station' , 6 : 'The Angel, Islington' , 7 : 'Christmas Chance'
+    , 8 : 'Euston Road' , 9 : 'Pentoville Road' , 10 : 'Just Visiting' , 11 : 'Pall Mall' , 12 : 'Toy Making Factory' , 13 : 'Whitehall' , 14 : 'Northunbererland Avenue' , 15 : 'Rudolf Station' , 16 : 'Bow Street' ,
+    17 : 'Elf Chest' , 18 : 'Marlborough Street' , 19 : 'Vine Street' , 20 : 'Raindeer Parking', 21 : 'Candy Cane', 22 : 'Christmas Chance', 23: 'Fleet Street', 24 : 'Trafalgar Square', 25 : 'North Pole Station',
+    26 : 'Leicester Square', 27 : 'Coventry Street' , 28 : 'Hot Chocolate Works', 29 : 'Piccadilly', 30 : 'Go to Santas Workshop', 31 : 'Regent Street', 32 : 'Oxford Street', 33 : 'Elf chest', 34 : 'Bond Street',
+    35 : 'Raindeer Street Station', 36 : 'Christmas Chance', 37 : 'Park Lane', 38 :'Elf Tax', 39 : 'Mayfair'};
+    return(dict)
+
+class player:
+    def __init__(self,tile,money):
+        self.tile = tile
+        self.money = money

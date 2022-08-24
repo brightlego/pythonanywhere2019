@@ -1,0 +1,19 @@
+Type	Super Effective Vs.	Not Very Effective Vs.	Resist Damage	Weak Vs.
+Normal		Rock, Steel, Ghost (Immune)	Ghost (Immune)	Fighting
+Fighting	Normal, Ice, Rock, Dark, Steel	Flying, Poison, Bug, Psychic, Ghost (Immune)	Rock, Bug, Dark	Flying, Psychic, Fairy
+Flying	Fighting, Bug, Grass	Electric, Rock, Steel	Fighting, Bug, Grass, Ground (Immune)	Rock, Electric, Ice
+Poison	Grass, Fairy	Poison, Ground, Rock, Ghost, Steel (Immune)	Fighting, Poison, Bug, Grass, Fairy	Ground, Psychic
+Ground	Poison, Rock, Steel, Fire, Electric	Bug, Grass, Flying (Immune)	Poison, Rock, Electric (Immune)	Water, Grass, Ice
+Rock	Flying, Bug, Fire, Ice	Fighting, Ground, Steel	Normal, Fire, Poison, Flying	Water, Grass, Fighting, Ground, Steel
+Bug	Grass, Psychic, Dark	Fighting, Flying, Poison, Ghost, Steel, Fire, Fairy	Fighting, Ground, Grass	Flying, Rock, Fire
+Ghost	Ghost, Psychic	Dark, Normal (Immune)	Poison, Bug, Normal (Immune), Fighting (Immune)	Ghost, Dark
+Steel	Ice, Rock, Fairy	Steel, Fire, Water, Electric	Normal, Grass, Ice, Flying, Psychic, Bug, Rock, Dragon, Steel, Fairy, Poison (Immune)	Fire, Fighting, Ground
+Fire	Bug, Steel, Grass, Ice	Rock, Fire, Water, Dragon	Bug, Steel, Fire, Grass, Ice, Fairy	Ground, Rock, Water
+Water	Ground, Rock, Fire	Water, Grass, Dragon	Fire, Water, Ice, Steel	Electric, Grass
+Grass	Ground, Rock, Water	Flying, Poison, Bug, Steel, Fire, Grass, Dragon	Water, Grass, Electric, Ground	Flying, Poison, Bug, Fire, Ice
+Electric	Flying, Water	Grass, Electric, Dragon, Ground (Immune)	Flying, Steel, Electric	Ground
+Psychic	Fighting, Poison	Steel, Psychic, Dark (Immune)	Fighting, Psychic	Bug, Ghost, Dark
+Ice	Flying, Ground, Grass, Dragon	Steel, Fire, Water, Ice	Ice	Fighting, Rock, Steel, Fire
+Dragon	Dragon	Steel	Fire, Water, Grass, Electric	Ice, Dragon, Fairy
+Dark	Ghost, Psychic	Fighting, Dark, Fairy	Ghost, Dark, Psychic (Immune)	Fighting, Bug, Fairy
+Fairy	Fighting, Dragon, Dark	Poison, Steel, Fire	Fighting, Bug, Dark, Dragon (Immune)	Poison, Steel

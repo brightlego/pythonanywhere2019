@@ -1,0 +1,17 @@
+import numpy as np
+#Create array from text file
+timeseries = np.genfromtxt("/home/LUX/ecb/obsdata.mtma33.txt")
+
+#Create an array of rainy days
+rainydays = float(1.0)
+for i in range(len(timeseries)):
+   if (timeseries[i] > 0):
+      rainydays = np.append(rainydays,timeseries[i])
+      rainydays.shape
+
+#Calculate statistics
+mean_rain = np.mean(rainydays[1:len(rainydays)])
+sd_rain = np.std(rainydays[1:len(rainydays)])
+
+print(sd_rain)
+print(mean_rain)

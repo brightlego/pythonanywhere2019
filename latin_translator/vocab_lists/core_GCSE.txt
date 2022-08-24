@@ -1,0 +1,12 @@
+type; latin; english; priority; [declines with]
+preposition; a/ab(with vowel); from, away from, by; 0; ablative
+verb irregular; absum,abesse,afui; to be absent,to be away,to be distant from; 0
+conjugation; ac/atque; and; 1
+verb 3; accido accidere accidi; to happen; 0
+verb 3/4; accipio, accipere, accepi, acceptus; to accept,to take in,to recive; 0
+preposition; ad; to,towards,at; 0; accusative
+adverb; adeo; so much,so greatly, to such an extent; 0
+verb irregular; adsum,adesse,adfui; to be here;to be present; 0
+verb 4; advenio,advenire,adveni;to arrive; 0
+verb 1; aedifico,aedificare,aedificavi,aedificatus; build; 0
+noun 2; ager,agri,m; feild; 0
